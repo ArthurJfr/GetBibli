@@ -1,0 +1,7 @@
+config/config.php
+/vendor
+node_modules/
+public/dist/
+.idea/
+.DS_Store
+composer.phar

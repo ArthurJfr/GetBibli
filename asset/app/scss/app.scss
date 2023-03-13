@@ -1,0 +1,72 @@
+$darlblue : #024049;
+
+:root {
+  --bleu: #5A86BF;
+  --bleuciel: #7E9ABF;
+  --taupe: #A67153;
+  --marron: #A67C49;
+  --clair: #C1C9D9;
+  --blanc: #ffffff;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Poppins&display=swap');
+//font-family: 'Kumar One Outline', cursive;
+//font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  background: rgb(0,255,239);
+  background: linear-gradient(180deg, rgba(0,255,239,1) 0%, rgba(2,64,73,1) 100%);
+  height: 100vw;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#masthead{
+  background-color: rgba(2,64,73,0.2) ;
+  width: 100%;
+
+  .nav{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__right{
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+    }
+    &__a{
+      font-size: 18px;
+      color: #000;
+    }
+    &__title{
+      font-family: 'Kumar One Outline' ,cursive;
+      font-size: 50px;
+    }
+
+  }
+}
+
+
+

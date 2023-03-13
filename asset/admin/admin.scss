@@ -1,0 +1,280 @@
+
+:root {
+  --darkblue : #024049;
+  --bleu: #5A86BF;
+  --bleuciel: #7E9ABF;
+  --taupe: #A67153;
+  --marron: #A67C49;
+  --clair: #C1C9D9;
+  --blanc: #ffffff;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Poppins&display=swap');
+//font-family: 'Kumar One Outline', cursive;
+//font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+
+
+}
+.login_btn, .register_btn{
+  margin: 2rem 0;
+  display: block ;
+  font-size: 25px;
+  width: 200px;
+  color: white;
+  padding:0 1rem;
+  border: solid white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+.bodywrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+
+
+  //sidebar
+  #masthead{
+    display: flex;
+    flex-direction: column;
+
+    //background-color: rgba(2,64,73,0.2) ;
+    background: rgb(0,255,239);
+    background: linear-gradient(180deg, rgba(0,255,239,1) 0%, rgba(2,64,73,1) 100%);
+    width: 350px;
+    .nav{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      &__li{
+        width: 250px;
+        padding: 1.5rem 0;
+        margin: 0 auto;
+      }
+      &__a{
+
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        color: var(--darkblue);
+        border-bottom: solid var(--darkblue);
+        transition: 0.2s;
+        font-size: 21px;
+
+
+
+
+      }
+      &__a:hover{
+        transform: scale(120%);
+
+
+      }
+
+      &__h{
+        display: block;
+        width: 100%;
+        color: var(--darkblue);
+        margin: 0 auto;
+
+      }
+
+      &__title{
+        font-family: 'Kumar One Outline' ,cursive;
+        width: 100%;
+        margin: 1rem auto;
+        font-size: 35px;
+
+        padding: 3rem;
+      }
+    }
+
+  }
+  //section
+  .container{
+    padding: 2rem;
+    width: 100%;
+    color: white;
+    background: rgb(26,32,32);
+    background: linear-gradient(270deg, rgba(26,32,32,1) 0%, rgba(2,64,73,1) 100%);
+  }
+}
+.add_btn{
+  margin: 2rem 0;
+  display: block ;
+  font-size: 25px;
+  width: 200px;
+  color: white;
+  padding:0 1rem;
+  border: solid white;
+  border-radius: 15px;
+  text-align: center;
+}
+.addsub_form{
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input{
+    width: 300px;
+    border-radius: 15px;
+    border: none;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  textarea {
+    width: 300px;
+    border-radius: 15px;
+    resize: none;
+    padding: 1.5rem;
+
+  };
+  input[type="submit"]{
+    color: white;
+    background-color: black;
+
+  }
+  span{
+    color: red;
+  }
+  select{
+    width: 300px;
+
+    border-radius: 15px;
+    border: none;
+    padding: 1rem;
+    margin: 1rem 0;
+    list-style: none;
+
+  }
+  option{
+    list-style: none;
+  }
+
+}
+.one_sub{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+  &__name p{
+    font-size: 27px;
+  }
+
+}
+.subline{
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 1rem 0;
+}
+.delete_btn{
+  color: red;
+  border: solid red;
+  padding: 0 1rem;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+.edit_btn{
+  color: limegreen;
+  border: solid limegreen;
+  padding: 0 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+//edit
+
+.showit{
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  &_right p{
+    padding-bottom: .5rem;
+  }
+}
+
+//Borrows Index
+.borrows{
+  .wrap_borrow{
+width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+  }
+  &_left{
+    width: 65%;
+  }
+  &_left, &_right{
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 600px;
+    scroll-margin-block: 0;
+
+    background: rgb(0,0,0,0.2);
+    border-radius: 15px;
+    &_one{
+      &_infos{
+        padding: 1rem 0;
+      }
+      &_date{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        p{
+          margin: 0.5rem 0;
+        }
+      }
+
+    }
+  }
+}
+.goback{
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.goback:hover{
+  font-size: 30px;
+  transform : rotate(180deg);
+
+
+}
+.form_bg{
+  padding: 1rem;
+ width: 350px;
+  margin: 0 auto;
+  background: rgb(0,0,0,0.1);
+  border-radius: 15px;
+
+}
